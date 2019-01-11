@@ -82,13 +82,45 @@ h2{
 		img{width: 90%;}
 		p{margin: 1em 0;}
 
-		a{
+		
+	}
+}
+
+.button{
+	
+		background-color: $main_red;
+		padding: 0.5em 2em;
+		color: white;
+		text-decoration: none;
+		text-transform: uppercase;
+		&:hover{background-color: black;}
+	
+}
+
+#pricing{
+	text-align: center;
+	a{display: none;}
+
+	table{
+		width: 60%;
+		margin: 0 auto;
+		border-collapse: collapse;
+
+		td, th{
+			padding: 1em;
+			text-align: center;
+		}
+		thead{
 			background-color: $main_red;
-			padding: 0.5em 2em;
-			color: white;
-			text-decoration: none;
-			text-transform: uppercase;
-			&:hover{background-color: black;}
+			th{
+				color: white;
+				&:first-child{background-color: $red_dark;}
+			}
+		}
+
+		tbody{
+			tr{border-bottom: 1px solid $main_text_color;}
+			td:first-child{background-color: $grey_background;}
 		}
 	}
 }
